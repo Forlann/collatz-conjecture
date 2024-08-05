@@ -46,10 +46,8 @@ def plot_directed_graph(sequence):
     plt.title('Gráfico Direcionado da Conjectura de Collatz')
     plt.show()
 
-
-steps, sequence = collatz_conjecture(7)
-print(f"Steps: {steps}")
-print(f"Sequence: {sequence}")
+n = int(input('Seleciona um número positivo diferente de 1: '))
+steps, sequence = collatz_conjecture(n)
 plot_line_chart(sequence)
 plot_histogram(sequence)
 plot_directed_graph(sequence)
